@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Karuuu!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sambutan Awal -->
+    <section class="screen welcome-screen active">
+        <div class="welcome-container">
+            <div class="birthday-title">
+                <span class="heart">❤</span> Birthday Website For Karuu<span class="heart">❤️</span>
+            </div>
+            <div class="welcome-content">
+                <h1>HI, <span class="highlight">ARU</span>!</h1>
+                <p class="subtitle">DO YOU WANT TO SEE A LITTLE SURPRISE FOR YOU?</p>
+                <div class="button-container">
+                    <button class="btn btn-no">NO, THANKS.</button>
+                    <button class="btn btn-yes">YES!!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Menu Utama -->
+<section class="screen main-menu">
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>THESE ARE FOR YOU</h1>
+            <div class="home-icon">
+                <i class="fas fa-home"></i>
+                <span>HOME</span>
+            </div>
+        </div>
+        
+        <div class="gift-grid">
+            <!-- Icon 1: Camera (Dinding Foto) -->
+            <div class="gift-item" id="photo-wall">
+                <div class="gift-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="gift-label">PHOTO WALL</div>
+            </div>
+            
+            <!-- Icon 2: Headset (Music) -->
+            <div class="gift-item" id="music-player">
+                <div class="gift-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <div class="gift-label">OUR SONG</div>
+            </div>
+            
+            <!-- Icon 3: Memo Card (Ucapan) -->
+            <div class="gift-item" id="message-card">
+                <div class="gift-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="gift-label">MESSAGE</div>
+            </div>
+            
+            <!-- Icon 4: Kado (Kue Ulang Tahun) -->
+            <div class="gift-item" id="birthday-cake">
+                <div class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="gift-label">SPECIAL GIFT</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Dinding Foto -->
+    <section class="screen photo-wall-screen">
+        <div class="photo-header">
+            <h1>OUR MEMORIES</h1>
+            <button class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+        </div>
+        <div class="photo-grid">
+            <div class="photo-frame">
+                <div class="frame-content">
+                    <img src="images/foto1.jpg" alt="Memory 1">
+                    <div class="photo-label">Beautiful Moment</div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="frame-content">
+                    <img src="images/foto2.jpg" alt="Memory 2">
+                    <div class="photo-label">Sulking Sweetly</div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="frame-content">
+                    <img src="images/foto3.jpg" alt="Memory 3">
+                    <div class="photo-label">Together Forever</div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="frame-content">
+                    <img src="images/foto4.jpg" alt="Memory 4">
+                    <div class="photo-label">My Favorite</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pemutar Musik -->
+<section class="screen music-screen">
+    <div class="music-header">
+        <h1>THIS SONG REMINDS ME OF YOU</h1>
+        <button class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+    </div>
+    <div class="music-player">
+        <div class="song-info">
+            <h2> Bryan Adams - Heaven</h2>
+            <p>(Official Music Video)</p>
+        </div>
+        <div class="youtube-embed">
+            <!-- Gunakan YouTube embed tanpa autoplay -->
+            <div id="youtube-placeholder">
+                <div class="youtube-thumbnail" id="youtube-thumbnail">
+                    <img src="https://img.youtube.com/vi/ZwDf-NMnUPA/maxresdefault.jpg" alt="YouTube Thumbnail">
+                    <div class="play-button-overlay">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Click to play video</p>
+                    </div>
+                </div>
+            </div>
+            <div id="youtube-player-container" style="display: none;">
+                <iframe 
+                    id="youtube-player"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/ZwDf-NMnUPA?enablejsapi=1&rel=0&modestbranding=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="toggleMusic">
+                <i class="fas fa-volume-mute"></i> <span>OFF</span>
+            </button>
+            <p class="music-note">Click the play button on the video to start</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Kartu Ucapan -->
+    <section class="screen message-screen">
+        <div class="message-header">
+            <div class="birthday-title">
+                <span class="heart">❤</span> Birthday Website For Karuu <span class="heart">❤️</span>
+            </div>
+            <button class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+        </div>
+        <div class="message-container">
+            <div class="birthday-header">
+                <div class="happy-birthday">
+                    <span class="happy">HAPPY</span>
+                    <span class="birthday">birthday</span>
+                </div>
+            </div>
+            <div class="message-card">
+                <div class="card-content">
+                    <h3>Dear, Karuu</h3>
+                    <p>
+                        HAPPY BIRTHDAY! YOU MAKE EVERY DAY<br>
+                        BRIGHTER, EVERY LAUGH LOUDER, AND MY<br>
+                        HEART FULLER. HERE'S TO YOU...MY JOY, MY<br>
+                        HOME, MY EVERYTHING.
+                    </p>
+                    <div class="signature">
+                        FOREVER YOURS.
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>Karuuu</p>
+                    <p>@aru.geimu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

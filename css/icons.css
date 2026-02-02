@@ -1,0 +1,73 @@
+/* Icons Styling */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Custom Icon Animations */
+.fa-home, .fa-camera, .fa-headphones, .fa-envelope, .fa-gift {
+    transition: all 0.3s ease;
+}
+
+.gift-item:hover .gift-icon i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Camera Icon Animation */
+.fa-camera {
+    position: relative;
+}
+
+.fa-camera::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 10px;
+    left: 25px;
+}
+
+/* Headphones Icon Styling */
+.fa-headphones {
+    transform: rotate(15deg);
+}
+
+/* Envelope Icon Styling */
+.fa-envelope {
+    position: relative;
+}
+
+.fa-envelope::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2px;
+    top: 18px;
+    left: 15px;
+}
+
+/* Gift Icon Styling */
+.fa-gift {
+    position: relative;
+}
+
+.fa-gift::before {
+    animation: giftShake 2s infinite;
+}
+
+@keyframes giftShake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+/* Back Button Icon */
+.fa-arrow-left {
+    font-size: 1.2rem;
+}
+
+/* Music Button Icon */
+.music-btn i {
+    font-size: 1.5rem;
+}
